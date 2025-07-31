@@ -18,7 +18,7 @@ posts_list: List[Post] = []
 
 
 @app.post("/posts", status_code=status.HTTP_201_CREATED)
-async def add_players(new_posts: List[Post]):
+async def add_posts(new_posts: List[Post]):
     posts_list.extend(new_posts)     
                  
 
